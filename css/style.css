@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 [class*="card"] {
     background: #fff;
     border: 1px solid #000;
@@ -10,24 +11,30 @@
     display: inline-block;
 
 }
-p{
-    margin:16px 22px;
 
+p {
+    margin: 16px 22px;
 
 }
-.row1{
+
+.row1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-.card-6{
-    color:#000;
+
+.card-6 {
+    color: #000;
     font-size: 26px;
+    z-index: 2;
+    transform: rotateY(0deg);
 }
+
 .heart {
     position: relative;
     width: 100px;
     height: 90px;
 }
+
 .heart:before,
 .heart:after {
     position: absolute;
@@ -50,6 +57,7 @@ p{
     -o-transform-origin: 0 100%;
     transform-origin: 0 100%;
 }
+
 .heart:after {
     left: 0;
     -webkit-transform: rotate(45deg);
@@ -61,5 +69,29 @@ p{
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
     -o-transform-origin: 100% 100%;
-    transform-origin :100% 100%;
+    transform-origin: 100% 100%;
 }
+/*Flipper*/
+.row1:hover .card-6, .row1.hover .card-6 {
+    transform: rotateY(180deg);
+}
+.row1, .card-6, .back {
+    width: 320px;
+    height: 480px;
+}
+.card-6 {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card-6, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back {
+    transform: rotateY(180deg);
+    background: red;
+}
+
