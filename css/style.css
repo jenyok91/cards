@@ -1,97 +1,110 @@
 * {
     box-sizing: border-box;
 }
-
-[class*="card"] {
-    background: #fff;
-    border: 1px solid #000;
-    border-radius: 10px;
+.ba-card{
     width: 171px;
-    height: 254px;
-    display: inline-block;
-
+    height: 257px;
+    background: #000;
+    border:1px solid #000;
+    border-radius: 10px;
+    font-size: 28px;
+    color:red;
 }
 
-p {
-    margin: 16px 22px;
 
-}
 
-.row1 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.card-6 {
-    color: #000;
-    font-size: 26px;
-    z-index: 2;
-    transform: rotateY(0deg);
-}
 
-.heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-}
+/*[class*="card"] {*/
+    /*background: #fff;*/
+    /*border: 1px solid #000;*/
+    /*border-radius: 10px;*/
+    /*width: 171px;*/
+    /*height: 254px;*/
+    /*display: inline-block;*/
 
-.heart:before,
-.heart:after {
-    position: absolute;
-    content: "";
-    left: 18px;
-    top: 50px;
-    width: 18px;
-    height: 26px;
-    background: #4880C5;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-}
+/*}*/
 
-.heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    -o-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-}
+/*p {*/
+    /*margin: 16px 22px;*/
+
+/*}*/
+
+/*.row1 {*/
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
+/*}*/
+
+/*.card-6 {*/
+    /*color: #000;*/
+    /*font-size: 26px;*/
+    /*z-index: 2;*/
+    /*transform: rotateY(0deg);*/
+/*}*/
+
+/*.heart {*/
+    /*position: relative;*/
+    /*width: 100px;*/
+    /*height: 90px;*/
+/*}*/
+
+/*.heart:before,*/
+/*.heart:after {*/
+    /*position: absolute;*/
+    /*content: "";*/
+    /*left: 18px;*/
+    /*top: 50px;*/
+    /*width: 18px;*/
+    /*height: 26px;*/
+    /*background: #4880C5;*/
+    /*-moz-border-radius: 50px 50px 0 0;*/
+    /*border-radius: 50px 50px 0 0;*/
+    /*-webkit-transform: rotate(-45deg);*/
+    /*-moz-transform: rotate(-45deg);*/
+    /*-ms-transform: rotate(-45deg);*/
+    /*-o-transform: rotate(-45deg);*/
+    /*transform: rotate(-45deg);*/
+    /*-webkit-transform-origin: 0 100%;*/
+    /*-moz-transform-origin: 0 100%;*/
+    /*-ms-transform-origin: 0 100%;*/
+    /*-o-transform-origin: 0 100%;*/
+    /*transform-origin: 0 100%;*/
+/*}*/
+
+/*.heart:after {*/
+    /*left: 0;*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*-moz-transform: rotate(45deg);*/
+    /*-ms-transform: rotate(45deg);*/
+    /*-o-transform: rotate(45deg);*/
+    /*transform: rotate(45deg);*/
+    /*-webkit-transform-origin: 100% 100%;*/
+    /*-moz-transform-origin: 100% 100%;*/
+    /*-ms-transform-origin: 100% 100%;*/
+    /*-o-transform-origin: 100% 100%;*/
+    /*transform-origin: 100% 100%;*/
+/*}*/
 /*Flipper*/
-.row1:hover .card-6, .row1.hover .card-6 {
-    transform: rotateY(180deg);
-}
-.row1, .card-6, .back {
-    width: 320px;
-    height: 480px;
-}
-.card-6 {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-}
-.card-6, .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.back {
-    transform: rotateY(180deg);
-    background: red;
-}
+/*.row1:hover .card-6, .row1.hover .card-6 {*/
+    /*transform: rotateY(180deg);*/
+/*}*/
+/*.row1, .card-6, .back {*/
+    /*width: 320px;*/
+    /*height: 480px;*/
+/*}*/
+/*.card-6 {*/
+    /*transition: 0.6s;*/
+    /*transform-style: preserve-3d;*/
+    /*position: relative;*/
+/*}*/
+/*.card-6, .back {*/
+    /*backface-visibility: hidden;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
+/*.back {*/
+    /*transform: rotateY(180deg);*/
+    /*background: red;*/
+/*}*/
 
