@@ -17,7 +17,6 @@
 .ba-heart, .ba-diamond {
     color: #ff0000;
 }
-
 /*Heart*/
 .ba-top-heart {
     margin-left: 5px;
@@ -512,10 +511,11 @@
 }
 
 .flip-container {
+    perspective: 1000px;
     margin-bottom: 20px;
-}
+    }
 
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container:hover .flipper, .flip-container:hover .flipper {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -533,7 +533,7 @@
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    position: relative;
+    /*position: relative;*/
 }
 
 .front, .back {
@@ -553,7 +553,7 @@
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    background: #000;
+    background-image: url(../img/back.jpg);
     border-radius: 10px;
     position: absolute;
     top: 20px;
