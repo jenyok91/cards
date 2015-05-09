@@ -1,110 +1,561 @@
 * {
     box-sizing: border-box;
 }
-.ba-card{
-    width: 171px;
-    height: 257px;
-    background: #000;
-    border:1px solid #000;
+
+.ba-card {
+    width: 140px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #000;
     border-radius: 10px;
     font-size: 28px;
-    color:red;
+    position: relative;
+    margin: 20px;
+    box-shadow: 2px 2px 2px rgba(13, 13, 13, 0.30);
 }
 
+.ba-heart, .ba-diamond {
+    color: #ff0000;
+}
 
+/*Heart*/
+.ba-top-heart {
+    margin-left: 5px;
+}
 
+.ba-top-heart h1:after {
+    content: "♥";
+    position: absolute;
+    top: 25px;
+    left: 4px;
+    z-index: 2;
+}
 
+.ba-bottom-heart {
+    position: relative;
+    margin-right: 5px;
+}
 
-/*[class*="card"] {*/
-    /*background: #fff;*/
-    /*border: 1px solid #000;*/
-    /*border-radius: 10px;*/
-    /*width: 171px;*/
-    /*height: 254px;*/
-    /*display: inline-block;*/
+.ba-bottom-heart h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
 
-/*}*/
+}
 
-/*p {*/
-    /*margin: 16px 22px;*/
+.ba-bottom-heart h1:after {
+    content: "♥";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
 
-/*}*/
+.ba-main {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
 
-/*.row1 {*/
-    /*margin-left: 10px;*/
-    /*margin-right: 10px;*/
-/*}*/
+/*Spade*/
+.ba-top-spade {
+    margin-left: 5px;
+}
 
-/*.card-6 {*/
-    /*color: #000;*/
-    /*font-size: 26px;*/
-    /*z-index: 2;*/
-    /*transform: rotateY(0deg);*/
-/*}*/
+.ba-top-spade h1:after {
+    content: "♠";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
 
-/*.heart {*/
-    /*position: relative;*/
-    /*width: 100px;*/
-    /*height: 90px;*/
-/*}*/
+.ba-bottom-spade {
+    position: relative;
+    margin-right: 5px;
+}
 
-/*.heart:before,*/
-/*.heart:after {*/
-    /*position: absolute;*/
-    /*content: "";*/
-    /*left: 18px;*/
-    /*top: 50px;*/
-    /*width: 18px;*/
-    /*height: 26px;*/
-    /*background: #4880C5;*/
-    /*-moz-border-radius: 50px 50px 0 0;*/
-    /*border-radius: 50px 50px 0 0;*/
-    /*-webkit-transform: rotate(-45deg);*/
-    /*-moz-transform: rotate(-45deg);*/
-    /*-ms-transform: rotate(-45deg);*/
-    /*-o-transform: rotate(-45deg);*/
-    /*transform: rotate(-45deg);*/
-    /*-webkit-transform-origin: 0 100%;*/
-    /*-moz-transform-origin: 0 100%;*/
-    /*-ms-transform-origin: 0 100%;*/
-    /*-o-transform-origin: 0 100%;*/
-    /*transform-origin: 0 100%;*/
-/*}*/
+.ba-bottom-spade h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
 
-/*.heart:after {*/
-    /*left: 0;*/
-    /*-webkit-transform: rotate(45deg);*/
-    /*-moz-transform: rotate(45deg);*/
-    /*-ms-transform: rotate(45deg);*/
-    /*-o-transform: rotate(45deg);*/
-    /*transform: rotate(45deg);*/
-    /*-webkit-transform-origin: 100% 100%;*/
-    /*-moz-transform-origin: 100% 100%;*/
-    /*-ms-transform-origin: 100% 100%;*/
-    /*-o-transform-origin: 100% 100%;*/
-    /*transform-origin: 100% 100%;*/
-/*}*/
-/*Flipper*/
-/*.row1:hover .card-6, .row1.hover .card-6 {*/
-    /*transform: rotateY(180deg);*/
-/*}*/
-/*.row1, .card-6, .back {*/
-    /*width: 320px;*/
-    /*height: 480px;*/
-/*}*/
-/*.card-6 {*/
-    /*transition: 0.6s;*/
-    /*transform-style: preserve-3d;*/
-    /*position: relative;*/
-/*}*/
-/*.card-6, .back {*/
-    /*backface-visibility: hidden;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-/*}*/
-/*.back {*/
-    /*transform: rotateY(180deg);*/
-    /*background: red;*/
-/*}*/
+}
 
+.ba-bottom-spade h1:after {
+    content: "♠";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main-spade {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Diamond*/
+.ba-top-diamond {
+    margin-left: 5px;
+}
+
+.ba-top-diamond h1:after {
+    content: "♦";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
+
+.ba-bottom-diamond {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-diamond h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-diamond h1:after {
+    content: "♦";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Club*/
+
+.ba-top-club {
+    margin-left: 5px;
+}
+
+.ba-top-club h1:after {
+    content: "♣";
+    position: absolute;
+    top: 25px;
+    left: 7px;
+    z-index: 2;
+}
+
+.ba-bottom-club {
+    position: relative;
+    margin-right: 5px;
+}
+
+.ba-bottom-club h1 {
+    position: relative;
+    transform: rotate(180deg);
+    top: 140px;
+
+}
+
+.ba-bottom-club h1:after {
+    content: "♣";
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    z-index: 2;
+}
+
+.ba-main-club {
+    font-size: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+/*Mid*/
+
+.ba-main2 i:first-child {
+    position: absolute;
+    top: 35px;
+    left: 57px;
+}
+
+.ba-main2 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    left: 57px;
+}
+
+.ba-main3 i:first-child {
+    position: absolute;
+    top: 35px;
+    left: 57px;
+}
+
+.ba-main3 i:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 57px;
+}
+
+.ba-main3 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    left: 57px;
+}
+
+.ba-main4 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main4 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main4 i:nth-child(3) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.ba-main4 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.ba-main5 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main5 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main5 i:nth-child(3) {
+    position: absolute;
+    top: 85px;
+    left: 60px;
+}
+
+.ba-main5 i:nth-child(4) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.ba-main5 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.ba-main6 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main6 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main6 i:nth-child(3) {
+    position: absolute;
+    top: 85px;
+    left: 30px;
+}
+
+.ba-main6 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    right: 30px;
+}
+
+.ba-main6 i:nth-child(5) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.ba-main6 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.ba-main7 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main7 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main7 i:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+}
+
+.ba-main7 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    left: 30px;
+}
+
+.ba-main7 i:nth-child(5) {
+    position: absolute;
+    top: 85px;
+    right: 30px;
+}
+
+.ba-main7 i:nth-child(6) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.ba-main7 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.ba-main8 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main8 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main8 i:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+}
+
+.ba-main8 i:nth-child(4) {
+    position: absolute;
+    bottom: 85px;
+    left: 30px;
+}
+
+.ba-main8 i:nth-child(5) {
+    position: absolute;
+    top: 85px;
+    right: 30px;
+}
+
+.ba-main8 i:nth-child(6) {
+    position: absolute;
+    bottom: 65px;
+    left: 60px;
+}
+
+.ba-main8 i:nth-child(7) {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.ba-main8 i:last-child {
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+}
+
+.ba-main9 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main9 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main9 i:nth-child(3) {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.ba-main9 i:nth-child(4) {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+.ba-main9 i:nth-child(5) {
+    position: absolute;
+    top: 90px;
+    right: 60px;
+}
+
+.ba-main9 i:nth-child(6) {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+
+.ba-main9 i:nth-child(7) {
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+
+.ba-main9 i:nth-child(8) {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+}
+
+.ba-main9 i:last-child {
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+}
+
+.ba-main10 i:first-child {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(2) {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.ba-main10 i:nth-child(3) {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.ba-main10 i:nth-child(4) {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(5) {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+}
+
+.ba-main10 i:nth-child(6) {
+    position: absolute;
+    bottom: 65px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(7) {
+    position: absolute;
+    bottom: 65px;
+    right: 30px;
+}
+
+.ba-main10 i:nth-child(8) {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+
+.ba-main10 i:nth-child(9) {
+    position: absolute;
+    bottom: 55px;
+    left: 60px;
+}
+
+.ba-main10 i:last-child {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+.ba-img {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.flip-container {
+    margin-bottom: 20px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 140px;
+    height: 200px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: #000;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
