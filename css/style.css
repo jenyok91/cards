@@ -17,6 +17,7 @@
 .ba-heart, .ba-diamond {
     color: #ff0000;
 }
+
 /*Heart*/
 .ba-top-heart {
     margin-left: 5px;
@@ -190,6 +191,7 @@
     position: absolute;
     bottom: 35px;
     left: 57px;
+    transform: rotate(180deg);
 }
 
 .ba-main3 i:first-child {
@@ -208,6 +210,7 @@
     position: absolute;
     bottom: 35px;
     left: 57px;
+    transform: rotate(180deg);
 }
 
 .ba-main4 i:first-child {
@@ -226,12 +229,14 @@
     position: absolute;
     bottom: 45px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main4 i:last-child {
     position: absolute;
     bottom: 45px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main5 i:first-child {
@@ -256,12 +261,14 @@
     position: absolute;
     bottom: 45px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main5 i:last-child {
     position: absolute;
     bottom: 45px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main6 i:first-child {
@@ -292,12 +299,14 @@
     position: absolute;
     bottom: 45px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main6 i:last-child {
     position: absolute;
     bottom: 45px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main7 i:first-child {
@@ -334,12 +343,14 @@
     position: absolute;
     bottom: 45px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main7 i:last-child {
     position: absolute;
     bottom: 45px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main8 i:first-child {
@@ -376,18 +387,21 @@
     position: absolute;
     bottom: 65px;
     left: 60px;
+    transform: rotate(180deg);
 }
 
 .ba-main8 i:nth-child(7) {
     position: absolute;
     bottom: 45px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main8 i:last-child {
     position: absolute;
     bottom: 45px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main9 i:first-child {
@@ -424,24 +438,28 @@
     position: absolute;
     bottom: 60px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main9 i:nth-child(7) {
     position: absolute;
     bottom: 60px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main9 i:nth-child(8) {
     position: absolute;
     bottom: 35px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main9 i:last-child {
     position: absolute;
     bottom: 35px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main10 i:first-child {
@@ -478,30 +496,35 @@
     position: absolute;
     bottom: 65px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main10 i:nth-child(7) {
     position: absolute;
     bottom: 65px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main10 i:nth-child(8) {
     position: absolute;
     bottom: 40px;
     left: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-main10 i:nth-child(9) {
     position: absolute;
     bottom: 55px;
     left: 60px;
+    transform: rotate(180deg);
 }
 
 .ba-main10 i:last-child {
     position: absolute;
     bottom: 40px;
     right: 30px;
+    transform: rotate(180deg);
 }
 
 .ba-img {
@@ -554,6 +577,7 @@
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-image: url(../img/back.jpg);
+    background-size: cover;
     border-radius: 10px;
     position: absolute;
     top: 20px;
